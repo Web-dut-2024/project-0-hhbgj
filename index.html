@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>谷歌搜索</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        input[type="text"] {
+            width: 300px;
+            height: 40px;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            width: 150px;
+            height: 40px;
+            border-radius: 20px;
+            background-color: #4285f4;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .links {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="links">
+        <a href="image_search.html">图片搜索</a>
+        <a href="advanced_search.html">高级搜索</a>
+    </div>
+    <form action="https://www.google.com/search" method="get">
+        <input type="text" name="q" placeholder="搜索...">
+        <input type="submit" value="谷歌搜索">
+        <input type="submit" formaction="https://www.google.com/search?btnI" value="我感到幸运">
+    </form>
+</body>
+</html>
